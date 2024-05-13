@@ -1,0 +1,267 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    line-height: 1.5;
+}
+
+body {
+    background-color: rgb(35, 33, 34);
+    color: rgb(226, 226, 226);
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding: 0;
+}
+/* CSS RESET */
+
+#header-container {
+    width: 100%;
+    height: 10vh;
+    background-color: pink;
+}
+
+#home {
+    background-color: red;
+    width: 100%;
+    height:  90vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#name-box {
+    margin-top: 200px;
+    height: 20vh;
+    width: 60vw;
+    background-color: blue;
+}
+
+#name {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+#socials {
+    /* background-color: rgba(128, 128, 128, 0.959); */
+    margin-top: 300px;
+    height: 10vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bubble {
+    background-color: green;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.website-name {
+    font-size: 1rem;
+}
+
+
+
+#about-me{
+    background-color: rgb(0, 187, 255);
+    width: 100%;
+    height:  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: rgb(255, 0, 0);
+    width: 90vw;
+    height: 95vh;
+    text-align: center;
+}
+
+#about-top {
+    background-color: brown;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+#profile-picture {
+    margin-left: 10px;
+    margin-top:10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+#about-title {
+    margin-top: 60px;
+    font-size: 2rem;
+    text-decoration-line: underline;
+    text-underline-offset: 15px;
+}
+
+#skill {
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    height:  100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 50px;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+}
+
+#programs-box {
+    background-color: blue;
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#programs {
+    width: 150px;
+    height: 220px;
+    background-color: pink;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#program-img {
+    width: 100px;
+    height: 100px;
+    
+}
+
+#portfolio {
+    background-color: rgb(0, 123, 255);
+    width: 100%;
+    height:  200vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#img-box {
+    margin-top:30px;
+    width: 90vw;
+    height: 186vh;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#port-img {
+    width: 100%;
+}
+
+#contact {
+    background-color: rgb(2, 255, 52);
+    width: 100%;
+    height:  100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact-containter {
+    background-color: rgb(251, 6, 6);
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-info {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#input {
+    width: 220px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+#message {
+    width: 220px;
+    height: 150px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

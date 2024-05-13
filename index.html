@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="./JavaScript/index.js" type="module" defer></script>
+    <script>
+      // Store scroll position before reload
+      window.addEventListener("beforeunload", function () {
+        var scrollPosition = window.scrollY;
+        history.replaceState(null, null, "#" + scrollPosition);
+      });
+
+      // Restore scroll position after reload
+      window.addEventListener("load", function () {
+        var scrollPosition = parseInt(window.location.hash.substring(1));
+        if (!isNaN(scrollPosition)) {
+          window.scrollTo(0, scrollPosition);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="header-container"></div>
+    </header>
+    <main>
+      <div id="home">
+        <div id="name-box">
+          <h1 id="name">JOHAN FLØTTEN</h1>
+          <p id="description">3D MODEL & GAME DESIGNER</p>
+        </div>
+        <div id="socials"></div>
+      </div>
+      <div id="about-me">
+        <div id="container">
+          <div id="about-top">
+            <div>
+              <img
+                src="./images/tacobell.jpg"
+                alt="profile picture"
+                id="profile-picture"
+              />
+            </div>
+            <div>
+              <h2 id="about-title">About me</h2>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            cupiditate sapiente adipisci libero repellat quas dolorum enim,
+            provident quisquam officiis nemo placeat possimus optio sit omnis
+            tenetur praesentium commodi totam hic ipsam aliquam. Soluta harum
+            praesentium, blanditiis a consequatur beatae quae doloribus!
+            Corrupti illo expedita, quis sunt natus commodi non. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Maiores cupiditate
+            sapiente adipisci libero repellat quas dolorum enim, provident
+            quisquam officiis nemo placeat possimus optio sit omnis tenetur
+            praesentium commodi totam hic ipsam aliquam. Soluta harum
+            praesentium, blanditiis a consequatur beatae quae doloribus!
+            Corrupti illo expedita, quis sunt natus commodi non. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Maiores cupiditate
+            sapiente adipisci libero repellat quas dolorum enim, provident
+            quisquam officiis nemo placeat possimus optio sit omnis tenetur
+            praesentium commodi totam hic ipsam aliquam. Soluta harum
+            praesentium, blanditiis a consequatur beatae quae doloribus!
+            Corrupti illo expedita, quis sunt natus commodi non. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Maiores cupiditate
+          </p>
+        </div>
+      </div>
+      <div id="skill">
+        <h2 id="title">PROGRAMS & SKILL</h2>
+        <div id="programs-box">
+          <div id="programs">
+            <img src="./images/tacobell.jpg" alt="" id="program-img" />
+            <h3>BLENDER</h3>
+            <p>Modeling, texturing, Lighting and Shading, Animation</p>
+          </div>
+          <div id="programs">
+            <img src="./images/tacobell.jpg" alt="" id="program-img" />
+            <h3>UNITY</h3>
+            <p>
+              Character movement, Environment building, Prefabs, Animation,
+              Probuilder, C#
+            </p>
+          </div>
+          <div id="programs">
+            <img src="./images/tacobell.jpg" alt="" id="program-img" />
+            <h3>PHOTOSHOP</h3>
+            <p>Graphics design, Texture creation, Web design</p>
+          </div>
+          <div id="programs">
+            <img src="./images/tacobell.jpg" alt="" id="program-img" />
+            <h3>VS Code</h3>
+            <p>HTML, CSS, JavaScript, Python, C#</p>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio">
+        <h2 id="title">PORTFOLIO</h2>
+        <div id="img-box">
+          <img src="./images/tacobell.jpg" alt="" id="port-img" />
+          <img src="./images/tacobell.jpg" alt="" id="port-img" />
+          <img src="./images/tacobell.jpg" alt="" id="port-img" />
+        </div>
+      </div>
+      <div id="contact">
+        <div id="contact-containter">
+          <h2 id="title">CONTACT ME</h2>
+          <p id="contact-info">
+            Johanflotte@hotmail.com <br />
+            Tel: +47 47265682
+          </p>
+          <input type="Name" id="input" />
+          <input type="Email" id="input" />
+          <input type="Subject" id="input" />
+          <input type="Message" id="message" />
+          <button id="send-button">Send</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer">
+        <p>C 2024 by Johan Fløtten</p>
+      </div>
+    </footer>
+  </body>
+</html>
