@@ -35,6 +35,14 @@ main {
     width: 100%;
     height: 10vh;
     background-color: rgb(41, 41, 41);
+    display: flex;
+}
+
+#jf-logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+    margin-top:17px;
 }
 
 #home {
@@ -76,8 +84,8 @@ main {
 
 .bubble {
     background-color: rgb(237, 237, 237);
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,8 +109,9 @@ main {
 }
 
 #container {
-    background-color: rgba(255, 0, 0, 0);
+    background-color: rgb(224, 26, 26);
     width: 90vw;
+    max-width: 500px;
     height: 95vh;
     text-align: center;
 }
@@ -149,14 +158,16 @@ main {
 }
 
 #programs-box {
-    background-color: rgba(0, 0, 255, 0);
+    background-color: rgb(10, 10, 237);
     width: 90vw;
     height: 60vh;
+    max-width: 500px;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: space-around;
     margin-top: 40px;
+    overflow: hidden;
 
 }
 
@@ -171,7 +182,7 @@ main {
     align-items: center;
 }
 
-#program-img {
+.program-img {
     width: 100px;
     height: 100px;
     
@@ -196,8 +207,9 @@ main {
     gap: 10px;
 }
 
-#port-img {
+.port-img {
     width: 100%;
+    overflow: hidden;
 }
 
 #contact {
@@ -225,20 +237,39 @@ main {
     margin-bottom: 15px;
 }
 
-#input {
+.input {
     width: 220px;
     height: 35px;
     margin-top: 5px;
+    outline: 50px;
 }
 
-#message {
+.message {
     width: 220px;
-    height: 150px;
+    height: 130px;
     margin-top: 5px;
+    outline: 50px;
+    padding: 4px;
+    font-size: 0.9rem;
+}
+
+#send-button {
+    margin-top:10px;
+    margin-left:160px;
+    width: 60px;
+    height: 35px;
+    font-size: 1.1rem;
+    background-color: rgb(50, 50, 50);
+    color: rgb(235, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
+@media (min-width: 800px) {
 
+}
 
 
 

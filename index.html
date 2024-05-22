@@ -24,7 +24,9 @@
   </head>
   <body>
     <header>
-      <div id="header-container"></div>
+      <div id="header-container">
+        <img src="./images/JF.png" alt="JF logo" id="jf-logo" />
+      </div>
     </header>
     <main>
       <div id="home">
@@ -75,12 +77,12 @@
         <h2 id="title">PROGRAMS & SKILL</h2>
         <div id="programs-box">
           <div id="programs">
-            <img src="./images/tacobell.jpg" alt="" id="program-img" />
+            <img src="./images/tacobell.jpg" alt="" class="program-img" />
             <h3>BLENDER</h3>
             <p>Modeling, texturing, Lighting and Shading, Animation</p>
           </div>
           <div id="programs">
-            <img src="./images/tacobell.jpg" alt="" id="program-img" />
+            <img src="./images/tacobell.jpg" alt="" class="program-img" />
             <h3>UNITY</h3>
             <p>
               Character movement, Environment building, Prefabs, Animation,
@@ -88,12 +90,12 @@
             </p>
           </div>
           <div id="programs">
-            <img src="./images/tacobell.jpg" alt="" id="program-img" />
+            <img src="./images/tacobell.jpg" alt="" class="program-img" />
             <h3>PHOTOSHOP</h3>
             <p>Graphics design, Texture creation, Web design</p>
           </div>
           <div id="programs">
-            <img src="./images/tacobell.jpg" alt="" id="program-img" />
+            <img src="./images/tacobell.jpg" alt="" class="program-img" />
             <h3>VS Code</h3>
             <p>HTML, CSS, JavaScript, Python, C#</p>
           </div>
@@ -102,9 +104,9 @@
       <div id="portfolio">
         <h2 id="title">PORTFOLIO</h2>
         <div id="img-box">
-          <img src="./images/tacobell.jpg" alt="" id="port-img" />
-          <img src="./images/tacobell.jpg" alt="" id="port-img" />
-          <img src="./images/tacobell.jpg" alt="" id="port-img" />
+          <img src="./images/tacobell.jpg" alt="" class="port-img" />
+          <img src="./images/tacobell.jpg" alt="" class="port-img" />
+          <img src="./images/tacobell.jpg" alt="" class="port-img" />
         </div>
       </div>
       <div id="contact">
@@ -114,10 +116,14 @@
             Johanflotten@hotmail.com <br />
             Tel: +47 47265682
           </p>
-          <input type="Name" id="input" />
-          <input type="Email" id="input" />
-          <input type="Subject" id="input" />
-          <input type="Message" id="message" />
+          <input type="Name" class="input" placeholder="Name" />
+          <input type="Email" class="input" placeholder="Email" />
+          <input type="Subject" class="input" placeholder="Subject" />
+          <textarea
+            type="Message"
+            class="message"
+            placeholder="Message"
+          ></textarea>
           <button id="send-button">Send</button>
         </div>
       </div>
