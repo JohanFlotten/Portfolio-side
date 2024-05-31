@@ -72,7 +72,6 @@ main {
 }
 
 #socials {
-    /* background-color: rgba(128, 128, 128, 0.959); */
     margin-top: 300px;
     height: 10vh;
     width: 80vw;
@@ -83,7 +82,6 @@ main {
 }
 
 .bubble {
-    background-color: rgb(237, 237, 237);
     width: 50px;
     height: 50px;
     display: flex;
@@ -97,8 +95,6 @@ main {
     color: black;
 }
 
-
-
 #about-me{
     background-color: rgb(24, 24, 24);
     width: 100%;
@@ -106,14 +102,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image:url(../images/about_bg.jpg);
+    color: black;
 }
 
 #container {
-    background-color: rgb(224, 26, 26);
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
     width: 90vw;
     max-width: 500px;
     height: 95vh;
-    text-align: center;
+    text-align: left;
 }
 
 #about-top {
@@ -158,7 +157,7 @@ main {
 }
 
 #programs-box {
-    background-color: rgb(10, 10, 237);
+    background-color: rgba(10, 10, 237, 0);
     width: 90vw;
     height: 60vh;
     max-width: 500px;
@@ -185,7 +184,12 @@ main {
 .program-img {
     width: 100px;
     height: 100px;
+    margin-bottom:15px;
     
+}
+
+#ps{
+    width: 140px;
 }
 
 #portfolio {
@@ -220,10 +224,11 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url(../images/contact-bg.jpg);
 }
 
 #contact-containter {
-    background-color: rgb(46, 46, 46);
+    background-color: rgba(46, 46, 46, 0.762);
     width: 90vw;
     height: 80vh;
     display: flex;
@@ -267,10 +272,84 @@ main {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 800px) {  
+
+    #img-box {
+        max-width: 650px;
+    }
+
+    #container {
+        padding: 50px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    /* ABOUT ME  */
+    #container {
+        max-width: 700px;
+
+    }
+    /* ABOUT ME END  */
+
+    /* PORTFOLIO  */
+    #portfolio {
+        max-width: none;
+    }
+    
+    #img-box {
+        margin-top:30px;
+        max-width: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    
+    .port-img {
+        width: 300px;
+        height: 200px;
+    }
+    /* PORTFOLIO END */
 
 }
 
+
+@media (min-width: 1400px) {
+
+        /* PROGRAMS & SKILLS  */
+        #skill {
+            height: 60vh;
+        }
+
+        #programs-box {
+            width: 80vw;
+            height: 50vh;
+            max-width: none;
+            overflow: auto;
+            margin-top:70px;
+        
+        }
+        
+        #programs {
+            width: 200px;
+            height: 100%;
+            text-align: center;
+            color:rgb(243, 243, 243);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .program-img {
+            width: 100px;
+            height: 100px;
+            
+        }
+    
+        /* PROGRAMS END */
+}
 
 
 

@@ -1,8 +1,8 @@
 const links = [
-    {title: "linkedin"},
-    {title: "github"},
-    {title: "insta"},
-    {title: "twitter"},
+    {backgroundImage: "url('../images/linkedin.png')"},
+    {backgroundImage: "url('../images/github_logo.png')"},
+    {backgroundImage: "url('../images/instagram-logo.png')"},
+    {backgroundImage: "url('../images/twitter.jpg')"},
 ];
 
 const socials = document.querySelector("#socials");
@@ -10,10 +10,8 @@ const socials = document.querySelector("#socials");
 links.forEach(link => {
     const bubble = document.createElement("div");
     bubble.classList.add("bubble");
-    const websiteName = document.createElement("p");
-    websiteName.classList.add("website-name");
-    websiteName.textContent = link.title;
+    bubble.style.backgroundImage = link.backgroundImage;
+    bubble.style.backgroundSize = "cover";
 
-    bubble.appendChild(websiteName);
     socials.appendChild(bubble);
 });
